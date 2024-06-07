@@ -1,5 +1,5 @@
 # WIN-TEASER++
-This repository is the unofficial win version of teaser++,only the C++ version was tested.
+The original repository code running platform is linux，this repository is the unofficial windows version of teaser++,only the C++ version was tested.
 ## Compared to the previous repository, added some header files under windows in win directory:
 + win
   + dirent.h
@@ -17,15 +17,27 @@ This repository is the unofficial win version of teaser++,only the C++ version w
 ## 1.Installation
 I use cmake-gui to generate the project,but there was an error during the first configure, so I downloaded this part of the code ahead of time and put it in the build directory.
 
+<font color="red">
+CMake Error at CMakeLists.txt:98 (add subdirectory):add subdirectory given source "D:/workspace/TEASER-plusplus-master/build1/pmc-src " which is not an existing directory.
 
-![configure_error](example\img\configure_error.png)
+CMake Error at CMakeLists.txt:107(add subdirectory):add subdirectory given source "D:/workspace/TEASER-plusplus-master/build1/tinyply-src" which is not an existing directory.
 
-![source](example\img\ssource.jpg)
+CMake Error at CMakeLists.txt:109 (target include directories):Cannot specify include directories for target "tinyply" which is not built by this project.
+</font>
 
++ source
+  + googletest-src
+  + pmc-src
+  + pybind11-src
+  + spectra-src
+  + tinyply-src
 
 ## 2.Generate dll
-
-![install](example\img\install.jpg)
+Install directory:
++ Install directory/teaserpp:
+  + bin
+  + include
+  + lib
 
 
 ## 3.Test
