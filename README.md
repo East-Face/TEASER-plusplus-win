@@ -12,7 +12,7 @@ official version :https://github.com/MIT-SPARK/TEASER-plusplus
 ## Environment
 + PCL1.10
 + CMAKE 3.2.0
-+ Eigen 3.4
++ Eigen 3.4 (https://eigen.tuxfamily.org/index.php?title=Main_Page)
 + Visual stdio 2019
 
 ## 1.Installation
@@ -34,26 +34,54 @@ CMake Error at CMakeLists.txt:109 (target include directories):Cannot specify in
   + tinyply-src
 
 
+- build steps:
+  + opencv cmake-gui 
+  + select source code path 
+  + select where build path 
+  + configure 
+  + select CMAKE_INSTALL_PREFIX(As illustrated in following figure
+)
+  + select Eigen3_DIR(As illustrated in following figure)
+  + configure
+  + generate
+ 
 
-![alt text](./doc/cmake1.jpg)
-![alt text](./doc/cmake2.jpg)
-![alt text](./doc/cmake3.jpg)
+
 ![alt text](./doc/cmake4.jpg)
-## 2.Generate dll
-Install directory:
+
+## 2.Visual stdio Generate dll
+
+- open project ->build->INSTALL
+
+Install directory: C:/Program Files (x86)/teaserpp (If you change it, it's your own address)
 + Install directory/teaserpp:
-  + bin
-  + include
-  + lib
+```
+├─bin
+│      tinyply.dll
+│      tinyplyd.dll
+│
+├─include
+│  │  tinyply.h
+│  ├─include
+│  ├─pmc
+│  └─teaser
+│         
+└─lib
+```
+
 
 
 ## 3.Test
 In order to facilitate the reading of data, I modified the code and used PCL to read the point cloud
 
-code path:
+- code path:
 ./example/teaser_cpp_fpfh/teaser_cpp_fpfh.cc
 
-results:
+- cmake-gui->configure->generate->open_project->build
+
+- copy_file pmc.dll teaser_features.dll teaser_io.dll teaser_registration.dll to example\teaser_cpp_fpfh\build\Release
+
+- results:
 ```=====================================
           TEASER++ Results
 =====================================
