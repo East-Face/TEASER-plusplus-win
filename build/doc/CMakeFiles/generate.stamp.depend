@@ -1,5 +1,0 @@
-# CMake generation dependency list for this directory.
-D:/programs/cmake-3.20.0-windows-x86_64/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake
-D:/programs/cmake-3.20.0-windows-x86_64/share/cmake-3.20/Modules/FindPackageMessage.cmake
-D:/workspace/TEASER-plusplus-master/cmake/modules/FindSphinx.cmake
-D:/workspace/TEASER-plusplus-master/doc/CMakeLists.txt

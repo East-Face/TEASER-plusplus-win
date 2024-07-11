@@ -12,6 +12,7 @@
 #include <algorithm>
 
 #include <teaser/macros.h>
+
 #include <Spectra/SymEigsSolver.h>
 #include <Spectra/GenEigsSolver.h>
 #include <Spectra/SymEigsShiftSolver.h>

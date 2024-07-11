@@ -1,5 +1,6 @@
 # WIN-TEASER++
 The original repository code running platform is linux，this repository is the unofficial windows version of teaser++,only the C++ version was tested.
+official version :https://github.com/MIT-SPARK/TEASER-plusplus
 ## Compared to the previous repository, added some header files under windows in win directory:
 + win
   + dirent.h
@@ -32,6 +33,12 @@ CMake Error at CMakeLists.txt:109 (target include directories):Cannot specify in
   + spectra-src
   + tinyply-src
 
+
+
+![alt text](./doc/cmake1.jpg)
+![alt text](./doc/cmake2.jpg)
+![alt text](./doc/cmake3.jpg)
+![alt text](./doc/cmake4.jpg)
 ## 2.Generate dll
 Install directory:
 + Install directory/teaserpp:

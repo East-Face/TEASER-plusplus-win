@@ -1,1 +1,0 @@
-D:/workspace/TEASER-plusplus-master/build/tinyply-build/tinyply.dir/RelWithDebInfo/tinyply.obj
